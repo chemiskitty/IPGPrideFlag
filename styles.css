@@ -26,22 +26,6 @@ footer {
     margin-top: 3em;
 }
 
-
-.Blurbs {
-    display: flex;
-    flex: column;
-}
-
-.BottomLeft {
-    float: left;
-    max-width: 600px;
-}
-
-.BottomRight{
-    float: right;
-    max-width: 600px;
-}
-
 .Grid {
     background-image: url('images/prideflag.jpg');
     background-position: center center;
@@ -83,8 +67,11 @@ footer {
     }
 }
 
-.tile:hover .tile-hover {
+.tile:hover {
     cursor: help;
+}
+
+.tile:hover .tile-hover {
     opacity: 1;
 }
 
