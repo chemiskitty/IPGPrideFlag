@@ -1,59 +1,100 @@
-        img{
-            width: 100px;
-            height: 100px;
-            opacity: 50%;
-        }
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
-        h1, h2, h3, p{
-            text-align: center;
-            font-family: Arial, Helvetica, sans-serif;
-        }
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
 
-        .Grid{
-            display:grid;
-            grid-template-columns: repeat(10, 1fr);
-            float: left;
-            column-gap: 0px;
-            background-image: url(https://static.dezeen.com/uploads/2018/06/lgbt-pride-flag-redesign-hero.jpg);
-            font-size: 0px;
-        }
+.Blurbs {
+    display: flex;
+    flex: column;
+}
 
-        .Grid:hover:after {
-            position: absolute;
-            content: attr(title);
-            display: inline-block;
-            left: 0px;
-            top: 0px;
-            padding: 5px;
-            background-color: black;
-            color: white;
-        }
+.BottomLeft {
+    float: left;
+    max-width: 600px;
+}
 
-        .TopSection{
-            margin: 0 auto;
-        }
+.BottomRight{
+    float: right;
+    max-width: 600px;
+}
 
-        .SideDescription{
-            max-width: 200px;
-            padding: 100px;
-            margin-right: auto;
-            margin-left: auto;
-        }
+.Grid {
+    background-image: url(https://static.dezeen.com/uploads/2018/06/lgbt-pride-flag-redesign-hero.jpg);
+    column-gap: 0px;
+    display: grid;
+    float: left;
+    font-size:  0;
+    grid-template-columns: repeat(10, 1fr);
+}
 
-        .Blurbs{
-            display: flex;
-            flex: column;
+.Grid:hover:after {
+    background-color: black;
+    color: white;
+    content: attr(title);
+    display: inline-block;
+    left: 0px;
+    padding: 5px;
+    position: absolute;
+    top: 0px;
+}
 
-        }
-        .BottomLeft{
-            float: left;
-            max-width: 600px;
-           
+.Grid img{
+    height: 100px;
+    opacity: 50%;
+    width: 100px;
+}
 
-        }
+.TopSection{
+    margin: 0 auto;
+}
 
-        .BottomRight{
-            float: right;
-            max-width: 600px;
-
-        }
+.SideDescription{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 200px;
+    padding: 100px;
+}
