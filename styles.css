@@ -50,6 +50,7 @@ footer {
 .tile-hover {
     background: #fff;
     color:  #000;
+    display: none;
     height: auto;
     left: -50%;
     opacity: 0;
@@ -72,6 +73,7 @@ footer {
 }
 
 .tile:hover .tile-hover {
+    display: inline-block;
     opacity: 1;
 }
 
